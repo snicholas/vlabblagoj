@@ -1,0 +1,47 @@
+{
+    "inputs": [{
+            "id": "DataObject_std_params",
+            "inputType": "individual",
+            "valueType": "value",
+            "description": "URL to download the std_params.npy",
+            "name": "std_params npy",
+            "obligation": true,
+            "hasDefault": false,
+            "valueSchema": "url",
+            "target": "std_params.npy"
+        },
+        {
+            "id": "DataObject_model_weights",
+            "inputType": "individual",
+            "valueType": "value",
+            "description": "URL to download the model weights from pretrained NN",
+            "name": "Model weights",
+            "obligation": true,
+            "hasDefault": false,
+            "valueSchema": "url",
+            "target": "model.h5"
+        },
+        {
+            "id": "DataObject_S2image",
+            "inputType": "individual",
+            "valueType": "value",
+            "description": "Input S2 image",
+            "name": "Input S2 image",
+            "obligation": true,
+            "hasDefault": false,
+            "valueSchema": "sat_product",
+            "target": "scene.SAFE/"
+        }
+    ],
+    "outputs": [
+        {
+            "id": "DataObject_outimg",
+            "outputType": "individual",
+            "valueType": "value",
+            "description": "Model output image",
+            "name": "model output image",
+            "valueSchema": "url",
+            "target": "data/outputs/result.png"
+        }
+    ]
+}

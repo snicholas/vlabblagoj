@@ -1,0 +1,13 @@
+{
+    "scripts": [{
+            "repoPath": "run.sh",
+            "targetPath": "run.sh",
+            "pathType": "FILE"
+        },
+        {
+            "repoPath": "main.py",
+            "targetPath": "main.py",
+            "pathType": "FILE"
+        }
+    ]
+}

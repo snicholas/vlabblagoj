@@ -61,7 +61,8 @@ def unblockshaped(arr, h, w):
                .swapaxes(1,2)
                .reshape(h, w))
 
-folder = 'S2B_MSIL1C_20181010T104019_N0206_R008_T32ULC_20181010T161145.SAFE'
+# mettere parametro nome immagine?
+folder = 'scene.SAFE'
 infolder = os.path.join(folder, 'GRANULE')
 infolder = os.path.join(infolder, os.listdir(infolder)[0], 'IMG_DATA')
 infile = os.path.join(infolder, fnmatch.filter(os.listdir(infolder), '*B02.jp2')[0])
@@ -138,4 +139,4 @@ cb = plt.colorbar(im, fraction=0.046, pad=0.04, ticks=range(9))
 cb.set_ticks(np.arange(9) + .5)
 cb.set_ticklabels(np.arange(9))
 plt.gcf().set_size_inches(15, 14)
-plt.savefig("test.png")
+plt.savefig("data/outputs/result.png")

@@ -1,5 +1,17 @@
 {
-    "inputs": [{
+    "inputs": [
+        {
+            "id": "DataObject_model_def",
+            "inputType": "individual",
+            "valueType": "value",
+            "description": "URL to download the model definition script. Must define a function def unet(img_size, num_classes)",
+            "name": "model definition script (Python)",
+            "obligation": true,
+            "hasDefault": false,
+            "valueSchema": "url",
+            "target": "model.py"
+        },
+        {
             "id": "DataObject_std_params",
             "inputType": "individual",
             "valueType": "value",

@@ -2,7 +2,7 @@
     "image": "snicholas/blagojunet:0.1",
     "privateimage": false,
     "resources": {
-        "memory_mb": "5000",
+        "memory_mb": "8192",
         "cpu_units": ""
     },
     "container": {

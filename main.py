@@ -1,3 +1,11 @@
+"""
+Title: Test for using tensorflow on VLAB
+Authors: Blagoj Delipetrev, Mattia Santoro, Nicholas Spadaro
+Date created: 2020/11/09
+Last modified: 2020/11/09
+Description: Templates for creation and execution through the VLAB on DestinationEarth VirtualCloud of random forest based digital twins.
+Version: 0.1
+"""
 import os, sys
 from osgeo import gdal
 from osgeo import gdalconst
